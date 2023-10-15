@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kipkurui Kevin</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <style>
+    body {
+      font-family: "Roboto slab", serif;
+
+      background-color: rgb(6, 3, 46);
+    }
+
+    .main-nav {
+      color: rgb(3, 5, 25);
+      font-weight: bolder;
+    }
+    .opening {
+      height: 85vh;
+    }
+    .navbar-brand {
+      font-size: 30px;
+      padding-left: 60px;
+    }
+    .navbar-nav {
+      font-size: 17px;
+      justify-content: end;
+      font-weight: bold;
+      color: rgb(6, 3, 46);
+    }
+    .btn-resume {
+      font-size: 17px;
+    }
+    .carousel {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 20px;
+      z-index: -1;
+    }
+    .profile {
+      width: 400px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10%;
+    }
+    .prof-desc {
+      font-size: 65px;
+    }
+    .about-container {
+      height: 90vh;
+      background-color: white;
+      color: rgb(6, 3, 46);
+    }
+    .descrip-about {
+      font-size: 18px;
+    }
+    .about-img {
+      width: 500px;
+      object-fit: cover;
+    }
+
+    .service-container {
+      height: 210vh;
+    }
+
+    .contact-container {
+      background-color: white;
+      height: 85vh;
+    }
+    .contact-title {
+      padding-left: 35px;
+    }
+    .map {
+      margin-left: 15px;
+      border-radius: 20px;
+    }
+    .social-icons {
+      display: flex;
+      align-items: center;
+    }
+
+    .social-icon {
+      font-size: 24px;
+      margin: 0 10px;
+    }
+    footer {
+      border-top: 0.1px solid rgb(26, 149, 225);
+    }
+  </style>
+  <body>
+    <nav
+      class="main-nav navbar navbar-expand-sm bg-white text-black navbar-white justify-content-center"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Welcome</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ml-auto col-md-11 d-flex justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item ml-auto me-3">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item ml-auto">
+              <a class="btn-resume btn btn-lg btn-success text-center" href="#">
+                Resume-CV <i class="fa fa-download"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="opening row col-m-12 p-5 text-white">
+      <div class="col-6 align-content-center mt-4 p-4">
+        <h2 class="">Hi there ! I'm,</h2>
+        <h1 class="prof-desc">Kipkurui Kevin</h1>
+        <h2 class="">Web Developer💻,</h2>
+
+        <a
+          class="lets-work btn btn btn-info rounded-pill mt-3 text-white p-2 lets-work text-center"
+          href="#services"
+        >
+          Lets work together!
+        </a>
+      </div>
+      <div class="col-6 mt-2 p-3 img-fluid d-flex justify-content-center">
+        <img class="profile circle img-fluid" src="img/img4.avif" />
+      </div>
+      <div class="text-center">
+        <div class="social-icons text-white">
+          <i class="fa fa-facebook social-icon"></i>
+          <i class="fa fa-twitter social-icon"></i>
+          <i class="fa fa-instagram social-icon"></i>
+          <i class="fa fa-linkedin social-icon"></i>
+          <i class="fa fa-github social-icon"></i>
+          <!-- Add more social icons as needed -->
+        </div>
+      </div>
+    </div>
+
+    <!-- About Yourself Section -->
+    <div class="about-container container rounded-4">
+      <section id="about">
+        <div class="row col-m-12">
+          <div class="col-5 img-fluid p-5 mt-5 d-flex justify-content-center">
+            <img
+              class="about-img img-fluid rounded-5"
+              src="img/img6.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-7 p-5 mt-5 justify-content">
+            <h1>About me</h1>
+            <p class="descrip-about">
+              I am a versatile ICT professional with a proven track record of
+              driving technological advancements, enhancing productivity, and
+              providing critical IT support. My diverse background has equipped
+              me with skills in policy documentation, web content management,
+              E-Learning support, and data analysis
+            </p>
+
+            <p class="descrip-about">
+              I am dedicated to fostering collaborative relationships,
+              delivering effective communication, and staying at the forefront
+              of technological advancements and prepared to excel in new
+              opportunities and make a meaningful impact in the dynamic field of
+              information technology
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Services Section -->
+    <div class="service-container container bg-info rounded-4">
+      <section id="services">
+        <div class="row mt-5">
+          <h1 class="text-white mb-3 p-5">Services</h1>
+          <div class="col-md-4 mb-4">
+            <div class="card img-fluid" style="width: 100%">
+              <img
+                src="img/img5.jpg"
+                class="card-img-top img-fluid"
+                alt="Web Development Image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Web Development</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="card img-fluid" style="width: 100%">
+              <img
+                src="img/img2.jpg"
+                class="card-img-top img-fluid"
+                alt="Data Analysis Image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Data Analysis</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="card img-fluid" style="width: 100%">
+              <img
+                src="img/img7.jpg"
+                class="card-img-top img-fluid"
+                alt="Consultancy Image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Consultancy</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="card" style="width: 100%">
+              <img
+                src="img/img3.jpg"
+                class="card-img-top"
+                alt="Project Management Image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Project Management</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-container container rounded-4 mt-5">
+      <section id="contact">
+        <div class="row">
+          <div class="col-md-6">
+            <h1 class="contact-title mt-4 mb-4">Contact</h1>
+            <iframe
+              class="map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63835.21189445607!2d36.911500979009816!3d-0.4398688548982627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18285dfed09e0ebf%3A0x829716f702f65e9e!2sNyeri!5e0!3m2!1sen!2ske!4v1697301310462!5m2!1sen!2ske"
+              width="500"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <div class="col-md-6">
+            <h1 class="contact-title mt-4 mb-2">Get in touch!</h1>
+            <form class="p-4">
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Your name*"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Your email*"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="6"
+                  placeholder="Your Message*"
+                  required
+                ></textarea>
+              </div>
+              <div class="mb-3">
+                <input
+                  type="submit"
+                  class="btn btn-lg text-white rounded-2 p-2 w-25 btn-info"
+                  id="exampleFormControlInput1"
+                  value="Submit"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="container">
+      <section id="connect" class=""></section>
+    </div>
+
+    <footer class="container-fluid bg-transparent text-white mt-5">
+      <p class="p-3 me-5">&copy; Copyright 2023 - Kevin Kipkurui</p>
+    </footer>
+  </body>
+</html>
